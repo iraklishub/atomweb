@@ -1,0 +1,296 @@
+@font-face {
+  font-family: geolabfont;
+  src: url(font/bpg-nino-mkhedruli-book-webfont.ttf);
+}
+@font-face {
+  font-family: geolabfontbold;
+  src: url(font/bpg-glaho-web-caps-webfont.ttf);
+}
+.container {
+  max-width: 1370px;
+  margin: 0 auto;
+}
+.header {
+  box-sizing: border-box;
+  background: white;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.header-logo-image {
+  width: 162.2px;
+  height: 32px;
+}
+.menu-ul {
+  list-style: none;
+  height: 21.5px;
+}
+.menu-ul li {
+  font-family: geolabfontbold;
+  font-size: 20px;
+  padding-left: 30px;
+  display: inline-block;
+}
+.menu-ul li:hover {
+  color: #b8edf8;
+  cursor: pointer;
+}
+.burger-menu-wrapper {
+  display: flex;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+/*maintop start*/
+
+.maintop {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.maintop-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.maintop-text1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 595px;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  font-size: 40px;
+  color: white;
+  font-family: geolabfontbold;
+}
+.maintop-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+  font-family: geolabfont;
+}
+
+.section-container {
+  margin: 0 auto;
+  max-width: 1370px;
+  padding: 0 110px;
+  box-sizing: border-box;
+}
+
+.services {
+  width: 100%;
+}
+.section-title {
+  text-align: center;
+  padding: 65px 0;
+}
+.section-title h1 {
+  font-family: geolabfontbold;
+  font-size: 24px;
+}
+.section-title span {
+  display: inline-block;
+  width: 93px;
+  border-top: 2px solid black;
+}
+.services-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.service-card {
+  width: 260px;
+  height: 240px;
+  margin: 0 12.5px;
+  border: 1px solid #b2b2b2;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+.services-body .service-card:first-child {
+  margin-left: 0;
+}
+.services-body .service-card:last-child {
+  margin-right: 0;
+}
+
+.service-card img {
+  height: 81px;
+}
+.service-card h2 {
+  font-family: geolabfontbold;
+  font-size: 18px;
+  margin-top: 55px;
+}
+.service-card p {
+  font-family: geolabfont;
+  font-size: 15px;
+  font-weight: bold;
+  color: #b2b2b2;
+  margin-top: 15px;
+}
+
+.myworks-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.myworks-card {
+  min-width: 365px;
+  height: 208px;
+  margin: 12.5px 0;
+  width: 365px;
+  border: 2px solid #b8edf8;
+  position: relative;
+}
+.myworks-card a img {
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(184, 237, 248, 0.75);
+  position: absolute;
+  top: 0%;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.myworks-card:hover .overlay {
+  visibility: visible;
+}
+.myworks-card a .overlay img {
+  width: 44px;
+  height: 44px;
+}
+.myworks-card a .overlay h3 {
+  font-size: 18px;
+  font-family: geolabfontbold;
+  padding-top: 15px;
+  color: white;
+}
+
+.aboutme {
+  background: #f1f1f1;
+  width: 100%;
+  height: 490px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aboutme img {
+  width: 370px;
+  height: 330px;
+  box-shadow: 30px 30px #b8edf8;
+}
+.aboutme-content {
+  width: 560px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+}
+.aboutme-content h1 {
+  font-family: geolabfontbold;
+  font-size: 24px;
+  margin-top: 20px;
+}
+.aboutme-content span {
+  display: inline-block;
+  width: 93px;
+  margin-top: 10px;
+  border-top: 2px solid black;
+}
+.aboutme-content p {
+  font-family: geolabfont;
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+.contact {
+  background: #b8edf8;
+  width: 100%;
+  height: 535px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 555px;
+  height: 275px;
+}
+.contact form input {
+  height: 40px;
+}
+.contact form textarea {
+  height: 110px;
+  resize: none;
+  padding: 10px;
+  padding-left: 20px;
+}
+.contact-inputs,
+textarea {
+  margin: 5px 0;
+  font-size: 16px;
+  font-family: geolabfont;
+  background: #b8edf8;
+  border: 2px solid #333333;
+  padding-left: 20px;
+}
+.send {
+  width: 80px;
+  height: 30px;
+  margin: 10px 0;
+  text-align: center;
+  color: #b8edf8;
+  font-weight: bold;
+  font-size: 15px;
+  background: white;
+  border: 1px solid #7ec4ce;
+  margin-left: 100%;
+  transform: translateX(-100%);
+}
+.send:hover {
+  background: #b8edf8;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.footer {
+  height: 100px;
+  background: #313332;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer span {
+  color: white;
+  font-family: geolabfont;
+  margin-left: 30px;
+}
+.footer img {
+  width: 162px;
+  height: 32px;
+  margin-right: 30px;
+}
